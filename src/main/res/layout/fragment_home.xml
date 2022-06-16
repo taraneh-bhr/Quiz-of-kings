@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="18"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="3"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/coin_textView"
+            android:layout_width="59dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@color/red"
+            android:gravity="center"
+            android:text="سکه"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/point_textView"
+            android:layout_width="95dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@color/red"
+            android:gravity="center"
+            android:text="امتیاز"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_weight="3">
+
+        <Button
+            android:id="@+id/new_game"
+            android:layout_width="139dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="100dp"
+            android:layout_weight="1"
+            android:text="شروع بازی جدید"
+            android:layout_marginEnd="100dp"
+            android:onClick="newGame"/>
+
+        <Button
+            android:id="@+id/unlimit_button"
+            android:layout_width="117dp"
+            android:layout_height="match_parent"
+            android:background="@color/orange"
+            android:layout_weight="1"
+            android:text="بازی نامحدود"
+            android:onClick="unLimit"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="نوبت شما"
+        android:textColor="@color/colorPrimaryDark"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="right"
+        android:background="#ffffff"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:background="@color/red"
+        android:id="@+id/my_turn_listView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"/>
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="در انتظار حریف"
+        android:textColor="@color/colorPrimaryDark"
+        android:gravity="center"
+        android:layout_gravity="right"
+        android:background="#ffffff"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:background="@color/red"
+        android:id="@+id/waiting_listView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"/>
+</LinearLayout>

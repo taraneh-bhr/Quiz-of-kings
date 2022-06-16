@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="10"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    tools:context=".ui.MainActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:text="Quiz Of Kings"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:layout_margin="15dp"
+        android:textSize="100sp"/>
+    <Button
+        android:id="@+id/login"
+        android:layout_width="200dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:text="عضو هستم (ورود)"
+        android:onClick="login"/>
+    <Button
+        android:id="@+id/signUp"
+        android:layout_width="200dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:text="ثبت نام"
+        android:onClick="signUp"/>
+    <Button
+        android:id="@+id/guest"
+        android:layout_width="200dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:textSize="20dp"
+        android:text="کاربر مهمان"
+        android:onClick="guest"/>
+
+</LinearLayout>
